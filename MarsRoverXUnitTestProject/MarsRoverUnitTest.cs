@@ -33,7 +33,7 @@ namespace MarsRoverXUnitTestProject
         {
             SetupFirstRover();
             firstRover.Command("LMLMLMLMM");
-            Assert.Equal(firstRover.GetPosition(), "1 3 N");
+            Assert.Equal("1 3 N",firstRover.GetPosition());
         }
 
         /// <summary>
@@ -44,8 +44,8 @@ namespace MarsRoverXUnitTestProject
         {
             SetupSecondRover();
             secondRover.Command("MMRMMRMRRM"); 
-            Assert.Equal(secondRover.GetPosition(), "1 3 N");
-            //Assert.Equal(secondRover.GetPosition(), "5 1 E");
+            Assert.Equal("1 3 N",secondRover.GetPosition());
+            //Assert.Equal("5 1 E",secondRover.GetPosition());
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace MarsRoverXUnitTestProject
         {
             SetupSecondRover();
             secondRover.Command("MMMMMMMMMM");
-            Assert.Equal(secondRover.GetPosition(), "5 3 E");
+            Assert.Equal("5 3 E",secondRover.GetPosition());
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace MarsRoverXUnitTestProject
         {
             SetupSecondRover();
             secondRover.Command("MMLMM");
-            Assert.Equal(secondRover.GetPosition(), "5 5 N");
+            Assert.Equal("5 5 N",secondRover.GetPosition());
         }
 
         /// <summary>
@@ -79,7 +79,7 @@ namespace MarsRoverXUnitTestProject
         {
             SetupFirstRover();
             firstRover.Command("RMMMMRMML");
-            Assert.Equal(firstRover.GetPosition(), "5 0 E");
+            Assert.Equal("5 0 E",firstRover.GetPosition());
         }
 
         /// <summary>
